@@ -11,6 +11,17 @@
 </head>
 
 <body>
-    <header class="bg-danger p-3 sticky-top">
-        <h1 class="h1 fw-bold text-white">Manajemen Buku</h1>
+    <header class="container-fluid bg-danger py-3 px-auto sticky-top d-md-flex justify-content-md-around align-items-baseline">
+        <h1 class="h1 fw-bold text-white text-capitalize">book management</h1>
+
+        <nav class="navbar ">
+            <ul class="list-grup d-md-flex justify-content-sm-around align-items-center gap-4 list-unstyled">
+                <li>
+                    <a href="index.php" class="list-grup-item list-grup-item-action navbar-brand fs-5 text-decoration-none text-white" aria-current="true">List Books</a>
+                </li>
+                <li>
+                    <a href="create_book.php" class="list-grup-item list-grup-item-action navbar-brand fs-5 text-decoration-none text-white" aria-current="true">Create Book</a>
+                </li>
+            </ul>
+        </nav>
     </header>
