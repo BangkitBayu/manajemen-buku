@@ -11,17 +11,25 @@
 </head>
 
 <body>
-    <header class="container-fluid bg-danger py-3 px-auto sticky-top d-md-flex justify-content-md-around align-items-baseline">
-        <h1 class="h1 fw-bold text-white text-capitalize">book management</h1>
+    <header class="container-fluid bg-danger py-3 px-auto sticky-top d-flex justify-content-between align-items-center">
+        <h1 class="h1 fw-bold text-white text-capitalize ">book management</h1>
 
-        <nav class="navbar ">
-            <ul class="list-grup d-md-flex justify-content-sm-around align-items-center gap-4 list-unstyled">
-                <li>
-                    <a href="index.php" class="list-grup-item list-grup-item-action navbar-brand fs-5 text-decoration-none text-white" aria-current="true">List Books</a>
-                </li>
-                <li>
-                    <a href="create_book.php" class="list-grup-item list-grup-item-action navbar-brand fs-5 text-decoration-none text-white" aria-current="true">Create Book</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark ms-auto me-2">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bx bx-menu"></i>
+                </button>
+            
+            <div class="collapse navbar-collapse my-3" id="navbarNav">
+                <ul class="navbar-nav d-lg-flex gap-3 ">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link active text-white fs-5">List Books</a>
+                    </li>
+                    <li>
+                        <a href="create_book.php" class="nav-link text-white fs-5">Add Book</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
