@@ -2,7 +2,6 @@
 include "layouts/header.php";
 include "service/config.php";
 
-$db = $conn;
 //fungsi untuk mengecek apakah judul buku  di tabel daftar buku sudah ada apa belum
 function isTitleAvailable($db, $title)
 {
