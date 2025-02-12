@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
 
 <main>
     <section id="form-container" class="container py-5 d-md-flex flex-column justify-content-center align-items-center gap-2 p-4 mt-2 ">
-        <h1 class=" fw-bold">Enter a Book</h1>
+        <h1 class=" fw-bold">Tambah Buku Baru</h1>
         <!-- Untuk validasi data -->
         <?php foreach ($error as $error) : ?>
             <div class="alert bg-danger" role="alert">

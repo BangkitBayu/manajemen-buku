@@ -6,7 +6,11 @@ function getAllBooks($db)  //Untuk mengambil semua data buku pADA DATABASE
 {
     $sql = "SELECT * FROM daftar_buku";
     $result = mysqli_query($db, $sql);
-    return $result->fetch_all(true);
+    if ($result->num_rows > 0) {
+        return $result->fetch_all(true);
+    }
+    // echo "Data tidak ditemukan";
+    // $result = mysqli_query($db, $sql);
 }
 ?>
 
@@ -35,7 +39,7 @@ function getAllBooks($db)  //Untuk mengambil semua data buku pADA DATABASE
                 </tr>
             </thead>
 
-            <tbody >
+            <tbody>
                 <?php if (getAllBooks($db)) : ?>
                     <?php foreach (getAllBooks($db) as $book) : ?>
                         <tr>
@@ -45,13 +49,13 @@ function getAllBooks($db)  //Untuk mengambil semua data buku pADA DATABASE
                             <td><?= $book['date_book'] ?></td>
                             <td><?= $book['genre_book'] ?></td>
                             <td>
-                                <a href="update_book.php?id=<? $book['id'] ?>" class="btn btn-success">
+                                <a href="update_book.php?id=<?= $book['id'] ?>" class="btn btn-success">
                                     <i class="bx bx-edit fs-5"></i>
                                 </a>
                             </td>
 
                             <td>
-                                <a href="delete_book.php?id=<? $book['id'] ?>" class="btn btn-danger">
+                                <a href="delete_book.php?id=<?= $book['id'] ?>" class="btn btn-danger">
                                     <i class="bx bx-trash fs-5"></i>
                                 </a>
                             </td>
