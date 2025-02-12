@@ -7,3 +7,6 @@ User dapat menambahkan data buku baru melalui form yang telah disediakan,pastika
 
 Read:
 Semua buku yang kamu masukkan akan ditampilkan.
+
+Update:
+Terdapat kesalahan dalam menambahkan data buku?tenang saja terdapat fitur update yang bisa digunakan untuk  mengedit data buku yang kamu masukkan.
