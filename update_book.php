@@ -4,7 +4,6 @@ include "service/config.php";
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    print "$id";
     $sql = "SELECT * FROM daftar_buku WHERE id='$id'";
     $bookId = mysqli_query($db, $sql);
     $result =  mysqli_fetch_assoc($bookId);

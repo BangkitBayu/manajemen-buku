@@ -9,4 +9,7 @@ Read:
 Semua buku yang kamu masukkan akan ditampilkan.
 
 Update:
-Terdapat kesalahan dalam menambahkan data buku?tenang saja terdapat fitur update yang bisa digunakan untuk  mengedit data buku yang kamu masukkan.
+Terdapat kesalahan dalam memasukkan info buku?tenang saja terdapat fitur update yang bisa digunakan untuk  mengedit data buku yang kamu masukkan.
+
+Delete:
+Kamu bisa menghapus buku.

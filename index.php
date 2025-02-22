@@ -59,6 +59,8 @@ function getAllBooks($db)  //Untuk mengambil semua data buku pADA DATABASE
                                     <i class="bx bx-trash fs-5"></i>
                                 </a>
                             </td>
+
+                            
                         </tr>
                     <?php endforeach; ?>
                 <?php else : ?>
@@ -70,6 +72,7 @@ function getAllBooks($db)  //Untuk mengambil semua data buku pADA DATABASE
         </table>
     </section>
 </main>
+<script src="./public/script/main.js"></script>
 
 <?php
 include "layouts/footer.php";
